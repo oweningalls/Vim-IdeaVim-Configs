@@ -1,0 +1,81 @@
+" use .vimrc config
+source ~/.vimrc
+
+" You can find a list of commands here: https://jb.gg/h38q75
+" Find more examples here: https://jb.gg/share-ideavimrc
+
+" highlight text when it gets yanked
+Plug 'machakann/vim-highlightedyank'
+
+" search with <leader>f/F[insert text here] to jump to the specified text
+" type the displayed character(s) in caps to jump there in visual mode
+set easymotion
+set notimeout
+map <leader><leader>em <Plug>(easymotion-prefix)
+map <leader>f <Plug>(easymotion-f)
+map <leader>F <Plug>(easymotion-F)
+
+" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+map <leader>rc <Action>(ReformatCode)
+
+" toggle the breakpoint on the current line
+map <leader>b <Action>(ToggleLineBreakpoint)
+
+" popup navigation
+" in order to navigate in popups like find everywhere, add <c-p> as a mapping for Up and <c-n> as a mapping for Down in the IDE itself
+
+" comment lines
+map <leader>c <Action>(CommentByLineComment)
+
+" rename
+map <leader>rn <Action>(RenameElement)
+
+" window splits
+" map <leader>wv <Action>(SplitVertically)
+" map <leader>ws <Action>(SplitHorizontally)
+" map <leader>wu <Action>(Unsplit)
+" map <leader>wm <Action>(MoveEditorToOppositeTabGroup)
+
+" close tab
+map <leader>wc <Action>(CloseContent)
+
+" show stuff you'd normally hover over to see
+map <leader>s <Action>(ShowHoverInfo)
+
+" move between tabs
+nmap <c-l> <Action>(NextTab)
+nmap <c-h> <Action>(PreviousTab)
+
+map gi <Action>(ReSharperGotoImplementation)
+
+" multiple cursors. create cursors by selecting multiple lines and entering <C-j>
+set multiple-cursors
+nmap <C-j> <Plug>NextWholeOccurrence
+xmap <C-j> <Plug>NextWholeOccurrence
+nmap g<C-j> <Plug>NextOccurrence
+xmap g<C-j> <Plug>NextOccurrence
+xmap <C-x> <Plug>SkipOccurrence
+xmap <C-p> <Plug>RemoveOccurrence
+
+" -- Version Control Stuff --
+" vcs undo
+map <leader>vu <Action>(Vcs.RollbackChangedLines)
+" vcs annotate
+map <leader>va <Action>(Annotate)
+map <leader>vh <Action>(Vcs.ShowHistoryForBlock)Vcs.ShowHistoryForBlock
+
+" reload vim config
+map <leader>rv <Action>(IdeaVim.ReloadVimRc.reload)
+
+" unit tests
+map <leader>rt <Action>(RiderUnitTestRunContextSplitAction)
+" map <leader>dt <Action>(RiderUnitTestDebugContextAction)
+nmap <leader>gt <Action>(GotoTest)
+
+" --- WEIRD EXPERIMENTAL STUFF ---
+" hide everything but the editor
+map <leader>td <Action>(ToggleDistractionFreeMode)
+" also go into fullscreen mode
+nnoremap <leader>tz <Action>(ToggleZenMode)
+" toggle windows
+nnoremap <leader>tw <Action>(HideAllWindows)
