@@ -41,6 +41,8 @@ map <leader>wc <Action>(CloseContent)
 
 " show stuff you'd normally hover over to see
 map <leader>s <Action>(ShowHoverInfo)
+" show value of variable in debug mode
+map <leader>h <Action>(QuickEvaluateExpression)
 
 " move between tabs
 nmap <c-l> <Action>(NextTab)
