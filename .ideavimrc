@@ -70,7 +70,7 @@ map <leader>vh <Action>(Vcs.ShowHistoryForBlock)Vcs.ShowHistoryForBlock
 map <leader>rv <Action>(IdeaVim.ReloadVimRc.reload)
 
 " unit tests
-map <leader>rt <Action>(RiderUnitTestRunContextSplitAction)
+map <leader>rt <Action>(RiderUnitTestRepeatPreviousRunAction)
 " map <leader>dt <Action>(RiderUnitTestDebugContextAction)
 nmap <leader>gt <Action>(GotoTest)
 
