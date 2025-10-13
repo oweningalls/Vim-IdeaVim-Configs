@@ -72,7 +72,10 @@ map <leader>rv <Action>(IdeaVim.ReloadVimRc.reload)
 " unit tests
 map <leader>rt <Action>(RiderUnitTestRepeatPreviousRunAction)
 " map <leader>dt <Action>(RiderUnitTestDebugContextAction)
-nmap <leader>gt <Action>(GotoTest)
+map <leader>gt <Action>(GotoTest)
+
+" make file in same location as currently opened one
+map <leader>mf <Action>(NewElementSamePlace)
 
 " --- WEIRD EXPERIMENTAL STUFF ---
 " hide everything but the editor
