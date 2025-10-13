@@ -78,6 +78,6 @@ nmap <leader>gt <Action>(GotoTest)
 " hide everything but the editor
 map <leader>td <Action>(ToggleDistractionFreeMode)
 " also go into fullscreen mode
-nnoremap <leader>tz <Action>(ToggleZenMode)
+map <leader>tz <Action>(ToggleZenMode)
 " toggle windows
-nnoremap <leader>tw <Action>(HideAllWindows)
+map <leader>tw <Action>(HideAllWindows)
