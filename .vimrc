@@ -52,3 +52,6 @@ nnoremap L $
 " J and K to move between paragraphs
 nnoremap K {
 nnoremap J }
+
+" execute last macro with Q
+nnoremap Q @@
