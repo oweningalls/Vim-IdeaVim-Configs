@@ -64,7 +64,7 @@ xmap <C-p> <Plug>RemoveOccurrence
 map <leader>vu <Action>(Vcs.RollbackChangedLines)
 " vcs annotate
 map <leader>va <Action>(Annotate)
-map <leader>vh <Action>(Vcs.ShowHistoryForBlock)Vcs.ShowHistoryForBlock
+map <leader>vh <Action>(Vcs.ShowHistoryForBlock)
 
 " reload vim config
 map <leader>rv <Action>(IdeaVim.ReloadVimRc.reload)
