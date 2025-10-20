@@ -50,5 +50,5 @@ nnoremap H ^
 " L goes to end of line
 nnoremap L $
 " J and K to move between paragraphs
-nnoremap J {
-nnoremap K }
+nnoremap K {
+nnoremap J }
