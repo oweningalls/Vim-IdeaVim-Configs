@@ -77,10 +77,12 @@ map <leader>gt <Action>(GotoTest)
 " make file in same location as currently opened one
 map <leader>mf <Action>(NewElementSamePlace)
 
-" --- WEIRD EXPERIMENTAL STUFF ---
 " hide everything but the editor
 map <leader>td <Action>(ToggleDistractionFreeMode)
 " also go into fullscreen mode
 map <leader>tz <Action>(ToggleZenMode)
 " toggle windows
 map <leader>tw <Action>(HideAllWindows)
+
+" go to next warning/error in the file
+map <leader>ge <Action>(GotoNextError)
