@@ -43,3 +43,6 @@ noremap <right> <NOP>
 vnoremap * "ty/<C-r>t<CR>N
 
 colorscheme desert
+
+" allow undoing 1000 changes
+undolevels=1000
