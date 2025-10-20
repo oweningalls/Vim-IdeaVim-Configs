@@ -30,8 +30,9 @@ noremap <leader>d "*d
 noremap <leader>c "*c
 noremap <leader>D "*D
 
-" jk to exit insert mode
+" jk or kj to exit insert mode
 inoremap jk <Esc>
+inoremap kj <Esc>
 
 " disable arrow keys
 noremap <up> <NOP>
@@ -44,5 +45,10 @@ vnoremap * "ty/<C-r>t<CR>N
 
 colorscheme desert
 
-" allow undoing 1000 changes
-undolevels=1000
+" H goes to beginning of line
+nnoremap H ^
+" L goes to end of line
+nnoremap L $
+" J and K to move between paragraphs
+nnoremap J {
+nnoremap K }
