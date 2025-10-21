@@ -46,12 +46,12 @@ vnoremap * "ty/<C-r>t<CR>N
 colorscheme desert
 
 " H goes to beginning of line
-nnoremap H ^
+noremap H ^
 " L goes to end of line
-nnoremap L $
+noremap L $
 " J and K to move between paragraphs
-nnoremap K {
-nnoremap J }
+noremap K {
+noremap J }
 
 " execute last macro with Q
 nnoremap Q @@
