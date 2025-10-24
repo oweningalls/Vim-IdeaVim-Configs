@@ -55,3 +55,7 @@ noremap J }
 
 " execute last macro with Q
 nnoremap Q @@
+
+" make search regex function very magic by default (more like normal regex)
+nnoremap <expr> /  '/\v'
+nnoremap <expr> ?  '?\v'
