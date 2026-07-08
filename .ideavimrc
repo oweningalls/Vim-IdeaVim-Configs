@@ -16,9 +16,6 @@ set notimeout
 " map <leader><leader>em <Plug>(easymotion-prefix)
 " map <leader>f <Plug>(easymotion-f)
 " map <leader>F <Plug>(easymotion-F)
-" Relative line numbers
-set relativenumber
-set number
 
 " -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 map <leader>rc <Action>(ReformatCode)
