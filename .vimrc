@@ -34,9 +34,8 @@ noremap <leader>d "*d
 noremap <leader>c "*c
 noremap <leader>D "*D
 
-" jk or kj to exit insert mode
+" jk to exit insert mode
 inoremap jk <Esc>
-inoremap kj <Esc>
 
 " disable arrow keys
 noremap <up> <NOP>
