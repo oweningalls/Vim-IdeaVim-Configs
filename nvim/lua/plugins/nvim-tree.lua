@@ -7,7 +7,8 @@ return {
     },
     opts = {
       view = {
-        width = 30,
+        width = 50,
+	side = "right";
       },
       filters = {
         dotfiles = false, -- show hidden files like .gitignore

@@ -1,7 +1,6 @@
 return {
   {
     "nvim-telescope/telescope.nvim",
-    branch = "0.1.x",
     dependencies = {
       "nvim-lua/plenary.nvim",
     },
@@ -11,10 +10,18 @@ return {
       { "<leader>fb", "<cmd>Telescope buffers<CR>", desc = "Find open buffers" },
       { "<leader>fp", "<cmd>Telescope projects<CR>", desc = "Find recent projects" },
     },
-    opts = {
-      defaults = {
-        file_ignore_patterns = { "node_modules", "%.git/", "bin/", "obj/" },
-      },
+opts = {
+  defaults = {
+    file_ignore_patterns = { "node_modules", "%.git/", "bin/", "obj/" },
+  },
+  pickers = {
+    find_files = {
+      hidden = true,
+    },
+    live_grep = {
+      additional_args = { "--hidden" },
     },
   },
+},  
+},
 }
