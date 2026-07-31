@@ -1,16 +1,7 @@
-vim.g.mapleader = " "
+-- Shared core (mapleader, search options, common keymaps) lives in ~/.vimrc,
+-- which is also sourced by .ideavimrc and .vscodevimrc. Neovim-only settings
+-- go below the source line and override the shared base where they overlap.
+vim.cmd.source(vim.fn.expand("~/.vimrc"))
 
 local opt = vim.opt
-opt.ignorecase = true
-opt.smartcase = true
-opt.incsearch = true
-opt.hlsearch = true
-opt.visualbell = true
-opt.scrolloff = 5
-
-opt.clipboard = "unnamedplus"
-opt.relativenumber = true
-opt.number = true
-
-local map = vim.keymap.set
-
+opt.scrolloff = 5 -- override .vimrc's 10
